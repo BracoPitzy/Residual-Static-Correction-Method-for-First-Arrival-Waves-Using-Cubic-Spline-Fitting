@@ -1,0 +1,1 @@
+# Residual-Static-Correction-Method-for-First-Arrival-Waves-Using-Cubic-Spline-Fitting
