@@ -11,9 +11,9 @@ In oil and gas exploration, artificial seismic wave generators are often used to
 # Core Issue
 The core issue is to solve the following optimization problem:
 
-$\min \int^{x_n}_{x_0}[FT_{ij}(x)]^2 \mathrm{d}x$
+$$\min \int_{x_0}^{x_n}[FT_{ij}(x)]^2 \mathrm{d}x$$
 
-s.t. $$\sum_{i=0}^{n}\left ( \frac{FT_{ij}(x_k)-FT_{ij}(x_{ijk})}{\sigma_{jk}} \right )^2 \le S$$
+$$\mathrm{s.t.} \quad \sum_{i=0}^{n}\left ( \frac{FT_{ij}(x_k)-FT_{ij}(x_{ijk})}{\sigma_{jk}} \right )^2 \le S$$
 
 where $FT_{ij}(x)$ represents the first arrival time for the $j$ th line of the $i$ th firing point, which is globally twice continuously differentiable and piecewise four times continuously differentiable; $S$ is a constant satisfying $(n+1)−2\sqrt{n+1} \le S \le (n+1)+2\sqrt{n+1}$
 
